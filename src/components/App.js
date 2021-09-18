@@ -4,11 +4,21 @@ import SongDetails from "./SongDetail";
 
 const App = () => {
   return (
-    <div className="app">
+    <>
       <h1>Songs App</h1>
-      <SongList />
-      <SongDetails />
-    </div>
+      <div className="ui container grid">
+        <div className="ui row">
+          <div className="column eight wide">
+            <SongList />
+          </div>
+        </div>
+        <div className="ui row">
+          <div className="column eight wide">
+            <SongDetails />
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
